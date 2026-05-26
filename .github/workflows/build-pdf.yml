@@ -55,3 +55,28 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           files: out/*.pdf
+
+      - name: Publish to itch.io
+        if: github.event_name == 'release'
+        env:
+          BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
+          TAG: ${{ github.event.release.tag_name }}
+        run: |
+          set -eux
+          apt-get update
+          apt-get install -y --no-install-recommends curl unzip
+          curl -sSL -o /tmp/butler.zip \
+            https://broth.itch.zone/butler/linux-amd64/LATEST/archive/default
+          unzip -o /tmp/butler.zip -d /usr/local/bin
+          chmod +x /usr/local/bin/butler
+          butler -V
+          # 8 channels, one per document. The master sheet + 4 faction
+          # panels + 3 character-sheet bundles each get their own slot.
+          butler push out/global_master.pdf     sirmmo/figures-of-a-future-past:master       --userversion "$TAG"
+          butler push out/federation.pdf        sirmmo/figures-of-a-future-past:federation   --userversion "$TAG"
+          butler push out/halcyon.pdf           sirmmo/figures-of-a-future-past:halcyon      --userversion "$TAG"
+          butler push out/ionclad.pdf           sirmmo/figures-of-a-future-past:ionclad      --userversion "$TAG"
+          butler push out/thalassar.pdf         sirmmo/figures-of-a-future-past:thalassar    --userversion "$TAG"
+          butler push out/federation_chars.pdf  sirmmo/figures-of-a-future-past:chars-federation --userversion "$TAG"
+          butler push out/halcyon_char.pdf      sirmmo/figures-of-a-future-past:chars-halcyon    --userversion "$TAG"
+          butler push out/ironclad_char.pdf     sirmmo/figures-of-a-future-past:chars-ironclad   --userversion "$TAG"
