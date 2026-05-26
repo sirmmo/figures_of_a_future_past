@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X5 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="78mm" height="60mm" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 7800 6000"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil1 {fill:#FBE3CF;fill-rule:nonzero}
+    .fil0 {fill:url(#id0)}
+   ]]>
+  </style>
+  <linearGradient id="id0" gradientUnits="userSpaceOnUse" x1="1642.38" y1="409.44" x2="6154.93" y2="5590.4">
+   <stop offset="0" style="stop-color:#EF7F1A"/>
+   <stop offset="1" style="stop-color:#DD6120"/>
+  </linearGradient>
+ </defs>
+ <g id="Ebene_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <rect class="fil0" x="305" y="304" width="7188" height="5391"/>
+  <path class="fil1" d="M3775 3000c0,-126 -93,-229 -208,-229 -115,0 -208,102 -208,229 0,126 93,229 208,229 115,0 208,-102 208,-229zm123 -172c-58,-206 -221,-365 -424,-412l-270 531 -566 0 203 -223 219 -241 346 -380c42,14 82,32 121,54 232,128 402,375 449,671l-77 0zm-551 -933c448,123 782,546 802,1055l1517 0c-22,-839 -621,-1512 -1358,-1512l-1354 0 -696 1367 120 0 826 -938 146 25c-1,1 -2,2 -3,4zm551 1277c-58,206 -221,365 -424,412l-270 -531 -566 0 203 223 219 241 346 380c42,-14 82,-32 121,-54 232,-128 402,-375 449,-671l-77 0zm-548 936l-146 25 -826 -938 -120 0 696 1367 1354 0c737,0 1337,-673 1358,-1512l-1517 0c-19,509 -354,933 -802,1055 1,1 2,2 3,4z"/>
+ </g>
+</svg>

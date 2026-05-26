@@ -1,0 +1,207 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{color}
+\usepackage{colortbl}
+\usepackage{tcolorbox}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+
+\geometry{margin=1.5cm}
+
+\definecolor{fedblue}{RGB}{15, 45, 94}
+\definecolor{fedlightblue}{RGB}{26, 62, 120}
+\definecolor{fedgold}{RGB}{255, 204, 0}
+
+\titleformat{\section}
+  {\normalfont\Large\bfseries\color{fedblue}}
+  {}{0em}{}[\titlerule]
+
+\titleformat{\subsection}
+  {\normalfont\large\bfseries\color{fedblue}}
+  {}{0em}{}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{1pt}
+\fancyhead[L]{USS Venture}
+\fancyhead[C]{Star Trek Adventures}
+\fancyhead[R]{Federazione}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+
+\begin{center}
+\Huge\textbf{\textcolor{fedblue}{USS Venture (Classe Nova)}}\\[0.5cm]
+\Large\textbf{Pannello Master Star Trek Adventures}
+\end{center}
+
+\begin{tcolorbox}[colback=fedlightblue!20, colframe=fedblue, title=\textbf{Informazioni sulla Nave}]
+\begin{tabular}{ll}
+\textbf{Classe}: & Nova \\
+\textbf{Equipaggio}: & 80-85 membri \\
+\textbf{Velocità massima}: & Curvatura 8 \\
+\textbf{Armamento}: & Phaser tipo X, tubi lanciasiluri \\
+\textbf{Specializzazione}: & Ricerca scientifica e esplorazione \\
+\end{tabular}
+\end{tcolorbox}
+
+\section{Quantum Data Points (QDP)}
+
+\begin{tcolorbox}[colback=fedlightblue!10, colframe=fedblue]
+\begin{tabularx}{\textwidth}{|X|X|X|}
+\hline
+\rowcolor{fedblue!20} \textbf{QDP Alpha} & \textbf{QDP Beta} & \textbf{QDP Gamma} \\
+\hline
+\large $\square\square$ \textbf{2} & \large $\square\square$ \textbf{0} & \large $\square\square$ \textbf{0} \\
+\hline
+\textbf{Conoscenza, Analisi,} & \textbf{Diplomazia, Comunicazione,} & \textbf{Risorse, Materiali,} \\
+\textbf{Scienza} & \textbf{Cooperazione} & \textbf{Estrazione} \\
+\hline
+\end{tabularx}
+\end{tcolorbox}
+
+\section{Filosofia di Gioco}
+
+\begin{tcolorbox}[colback=fedlightblue!10, colframe=fedblue]
+\begin{itemize}[leftmargin=*]
+\item \textbf{Esplorazione, comprensione, protezione} come valori fondamentali
+\item Bilanciamento tra curiosità scientifica e cautela
+\item Risoluzione dei conflitti preferibilmente non-violenta
+\item Applicazione dei principi della Federazione: non-interferenza quando possibile
+\end{itemize}
+\end{tcolorbox}
+
+\section{Meccaniche Chiave di Star Trek Adventures}
+
+\begin{tcolorbox}[colback=fedlightblue!10, colframe=fedblue]
+\begin{itemize}[leftmargin=*]
+\item \textbf{Tiri Base}: Attributi + Discipline contro Difficoltà (tipicamente 2-3)
+\item \textbf{Momentum}: Generato da successi eccezionali, spendibile per effetti positivi
+\item \textbf{Determinazione}: Spesa invocando Valori per azioni decisive
+\item \textbf{Assistenza}: Bonus di +1 dado quando membri dell'equipaggio collaborano
+\item \textbf{Complicazioni}: Possono verificarsi su fallimenti critici (20 sui dadi)
+\end{itemize}
+\end{tcolorbox}
+
+\section{Esempi di Difficoltà per Tiri Comuni}
+
+\begin{tabularx}{\textwidth}{|l|X|c|}
+\hline
+\rowcolor{fedblue!20} \textbf{Azione} & \textbf{Attributo + Disciplina} & \textbf{Difficoltà} \\
+\hline
+Scansioni standard & Ragione + Scienza & 1 \\
+\hline
+Analisi tecnologia iconiana & Ragione + Scienza & 3 \\
+\hline
+Comunicazioni diplomatiche & Presenza + Comando & 2 \\
+\hline
+Modifiche ai sensori & Controllo + Ingegneria & 2 \\
+\hline
+Percepire intenzioni aliene & Intuito + Connessione & 3 \\
+\hline
+\end{tabularx}
+
+\section{Fasi dell'Avventura}
+
+\begin{tcolorbox}[colback=fedlightblue!10, colframe=fedblue]
+\begin{enumerate}[leftmargin=*]
+\item \textbf{Introduzione (15 minuti)}: Stabilire situazione e personaggi
+\item \textbf{Missioni Iniziali (60 minuti)}: "Primo Contatto Iconiano" - Scansione dell'anomalia
+\item \textbf{Svolta (90 minuti)}: "Risveglio del Portale" - L'anomalia si intensifica
+\item \textbf{Conclusione (75 minuti)}: "La Scelta Finale" - Decidere il destino dell'artefatto
+\end{enumerate}
+\end{tcolorbox}
+
+\section{Enigmi della USS Venture}
+
+\begin{tcolorbox}[colback=fedlightblue!10, colframe=fedblue]
+\begin{description}[leftmargin=*]
+\item[Il Codice Biologico] I membri telepatici dell'equipaggio percepiscono una sequenza ripetitiva di emozioni che corrispondono a un codice iconiano.
+\item[Sincronizzazione Quantica dei Sensori] L'artefatto esiste in tre stati quantici simultaneamente. Richiede tre ufficiali che lavorano in sincronia.
+\item[La Biblioteca Vivente] Il simbionte della Dottoressa Krell inizia a ricordare dettagli di un incontro con gli Iconiani avvenuto in una vita precedente.
+\item[Il Teorema Subspaziale] I computer risolvono spontaneamente complesse equazioni subspaziali. Richiede un approccio transdisciplinare.
+\end{description}
+\end{tcolorbox}
+
+\section{Personaggi Chiave}
+
+\begin{tcolorbox}[colback=fedlightblue!10, colframe=fedblue]
+\begin{description}[leftmargin=*]
+\item[Capitano Elara T'Nae] Umana/Vulcaniana, ex archeologa xenobiologa
+\item[Comandante Sovak] Primo Ufficiale vulcaniano, logico ma preoccupato per i Romulani
+\item[Tenente Comandante Reese] Capo Ingegnere, prodigio tecnologico
+\item[Dottoressa Krell] Ufficiale Scientifico trill con simbionte antico
+\item[Vorin] Ufficiale delle comunicazioni betazoide con abilità telepatiche
+\end{description}
+\end{tcolorbox}
+
+\section{Principi della Federazione da Considerare}
+
+\begin{tcolorbox}[colback=fedlightblue!10, colframe=fedblue]
+\begin{itemize}[leftmargin=*]
+\item Non-interferenza vs. responsabilità galattica
+\item Condivisione di conoscenza vs. sicurezza
+\item Cooperazione multiculturale vs. cautela strategica
+\item Preservazione di culture aliene e manufatti storici
+\item Priorità alla vita e alla sicurezza sopra l'avanzamento scientifico
+\end{itemize}
+\end{tcolorbox}
+
+\section{Opzioni per la Fase Finale}
+
+\begin{tcolorbox}[colback=fedlightblue!10, colframe=fedblue]
+\begin{description}[leftmargin=*]
+\item[Contenimento Scientifico] (5 QDP Alpha + 3 QDP Beta) Utilizzare campi di forza per stabilizzare l'artefatto per studi futuri
+\item[Protocollo di Conservazione] (7 QDP Alpha) Spostare l'artefatto fuori fase per preservarlo in modo sicuro
+\item[Integrazione Controllata] (4 QDP Alpha + 4 QDP Beta) Lavorare con altre fazioni per un protocollo di accesso condiviso
+\end{description}
+\end{tcolorbox}
+
+\section{Meccanica del Teletrasporto in Presenza di Interferenze Iconiane}
+
+\begin{tcolorbox}[colback=fedlightblue!10, colframe=fedblue]
+\begin{itemize}[leftmargin=*]
+\item \textbf{Costo Base}: 3 QDP 
+\item \textbf{Capacità Unica}: "Biofiltro Avanzato" - Può rilevare tentativi di infiltrazione (2 QDP)
+\item \textbf{Bonus}: +2 alla stabilità se si spendono QDP Alpha (esperienza con teletrasporti)
+\item \textbf{Risoluzione}: 2d6 + modificatori, dove 10+ è successo completo
+\end{itemize}
+\end{tcolorbox}
+
+\section{Promemoria e Suggerimenti Narrativi}
+
+\begin{tcolorbox}[colback=fedlightblue!10, colframe=fedblue]
+\begin{itemize}[leftmargin=*]
+\item "I vostri tricorder rilevano fluttuazioni temporali attorno all'artefatto che le altre navi non sembrano notare..."
+\item "L'ufficiale scientifico nota similarità tra questi simboli iconiani e frammenti studiati dall'Accademia delle Scienze..."
+\item "Ricevete una comunicazione criptata da Narendra Station con nuove direttive riguardo l'artefatto..."
+\item Concludere con discorsi ispirati "alla Picard" nei momenti cruciali
+\item Enfatizzare l'ottimismo di Star Trek anche nelle situazioni difficili
+\end{itemize}
+\end{tcolorbox}
+
+\section{Comandi del Bot}
+
+\begin{tcolorbox}[colback=fedlightblue!10, colframe=fedblue]
+\begin{description}[leftmargin=*]
+\item[/register] Registrazione come Master
+\item[/status] Stato corrente dell'avventura
+\item[/scan] Eseguire una scansione dell'artefatto
+\item[/qdp\_status] Vedere lo stato dei tuoi QDP
+\item[/add\_qdp <tipo> <quantità> <descrizione>] Aggiungere QDP (alpha, beta, gamma)
+\item[/spend\_qdp <tipo> <quantità> <descrizione>] Spendere QDP
+\item[/resolve\_enigma\_piece <tipo>] Risolvere parte di un enigma
+\item[/teleport <tavolo> <descrizione>] Tentare un teletrasporto
+\item[/convergence\_roll <descrizione>] Eseguire un tiro di Convergenza nella fase finale
+\item[/send\_message <tavolo> <messaggio>] Inviare un messaggio ad un altro tavolo
+\end{description}
+\end{tcolorbox}
+
+\end{document}
