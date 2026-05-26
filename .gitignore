@@ -1,0 +1,40 @@
+# LaTeX build artefacts
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+*.idx
+*.ilg
+*.ind
+*.nav
+*.snm
+*.vrb
+*.xdv
+*.run.xml
+*.bcf
+
+# PDFs are built by CI and attached to releases.
+# The chars/*.pdf below ARE source artefacts (pre-rendered character sheets
+# checked in by hand), so allow them explicitly.
+*.pdf
+!chars/*.pdf
+
+# Editor / OS
+.DS_Store
+*.swp
+*~
+.vscode/
+.idea/
+
+# Local Claude Code settings
+.claude/
+
+# Private event-prep materials
+event/

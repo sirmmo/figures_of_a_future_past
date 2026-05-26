@@ -1,0 +1,53 @@
+name: Build PDFs
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+  push:
+    branches: [main, master]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: texlive/texlive:latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build all game documents
+        # Each .tex in the repo root is a standalone article document.
+        # example.tex is the rpgtex template demo and is skipped — keep it
+        # in the repo only as reference.
+        run: |
+          set -eux
+          mkdir -p out
+          for src in \
+            global_master.tex \
+            federation.tex halcyon.tex ionclad.tex thalassar.tex \
+            federation_chars.tex halcyon_char.tex ironclad_char.tex
+          do
+            echo "::group::compile $src"
+            # Two passes: tcolorbox/fancyhdr settle on the second.
+            pdflatex -interaction=nonstopmode -halt-on-error "$src"
+            pdflatex -interaction=nonstopmode -halt-on-error "$src"
+            cp "${src%.tex}.pdf" "out/${src%.tex}.pdf"
+            echo "::endgroup::"
+          done
+
+      - name: Upload build artefacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: figures-of-a-future-past-pdfs
+          path: out/*.pdf
+          if-no-files-found: error
+
+      - name: Attach PDFs to release
+        if: github.event_name == 'release'
+        uses: softprops/action-gh-release@v2
+        with:
+          files: out/*.pdf
